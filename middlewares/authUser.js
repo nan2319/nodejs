@@ -1,6 +1,7 @@
 'use strict'
 
 const jwt = require('jsonwebtoken');
+let Sessions = require('../models/sessions');
 const middlewares = {
     userProtectUrl: function(req, res, next){
         const token= req.headers['access-token'];
