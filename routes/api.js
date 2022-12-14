@@ -49,7 +49,7 @@ api.post("/login",[
 ], AuthController.login);
 
 //endpoint de usuario logout
-api.post("/logout", AuthController.logout);
+api.post("/logout",userProtectUrl, AuthController.logout);
 
 //endpoint maestros
 //muestra todos los maestros
